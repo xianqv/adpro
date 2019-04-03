@@ -1,7 +1,7 @@
 package com.init.adpro;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -16,11 +16,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date: 2019/4/3 11:00 AM
  */
 @SpringBootApplication
+@Slf4j
 public class AdproApplication {
-   private  static Logger logger= LoggerFactory.getLogger(AdproApplication.class);
     public static void main(String[] args) {
         SpringApplication.run(AdproApplication.class, args);
-        logger.info("------ 系统已经启动-------");
+        log.info("------ 系统已经启动-------");
 
     }
 
